@@ -1,0 +1,15 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: spring-mysql
+  labels:
+    run: spring-mysql 
+spec:
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+      nodePort: 30066
+  type: LoadBalancer
+  selector:
+     run: spring-mysql 
