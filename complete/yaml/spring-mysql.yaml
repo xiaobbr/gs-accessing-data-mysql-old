@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: spring-mysql 
-        image: bingli7/spring-mysql:latest 
+        image: bingli7/spring-mysql:0823 
         ports:
         - containerPort: 8080
